@@ -1,465 +1,182 @@
-* {
+*{
     margin: 0px;
-    height: auto;
+    background-color: rgb(252, 252, 252);
 }
-
-html {
-    cursor: url("blob-haikei.png"), auto;
+body{
+    min-height: 100vh;
 }
-
-body {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    background-color: rgb(243, 239, 239);
-    scroll-behavior: smooth;
-    user-select: none;
-    overflow-x: hidden;
+nav{
+    height: 110px;
+    background-color: rgb(39, 37, 37);
 }
-
-body::-webkit-scrollbar {
-    display: none;
+#btn{
+    margin: auto;
+    text-align: center;
 }
-
-nav {
-    background-color: rgb(46, 39, 39);
-    height: 100px;
-    width: 100%;
-}
-
-.main {
-    margin-left: 30px;
-    padding-top: 20px;
-    color: rgb(226, 222, 215);
+.main{
+    background-color: transparent;
+    color: rgb(231, 231, 231);
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
     font-family: "Vina Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
-    text-align: left;
 }
-
-.link {
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
-    margin-right: 40px;
-    text-decoration: none;
-    margin-top: -35px;
-}
-
-.link a {
-    font-size: 23px;
-    color: rgb(226, 222, 215);
-    text-decoration: none;
-    margin-left: 25px;
-    font-family: "Vina Sans", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.link a:hover {
-    color: rgb(162, 168, 166);
-}
-
-/*FOOTER*/
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
+footer{
     background-color: rgb(216, 216, 216);
     text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 60px;
 }
-
-footer p {
-    margin-top: 10px;
-    font-size: 17px;
+.cont{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    background-color: transparent;
+    justify-content: center;
+    margin:20px;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-
-.cont h3 {
-    line-height: 50px;
+#container{
     position: absolute;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(71, 71, 71);
-    text-align: left;
-    width: 300px;
-    margin-top: 60vh;
-    margin-left: 10px;
-    font-size: 70px;
-}
-
-.txt1 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(71, 71, 71);
-    text-align: center;
-    justify-content: center;
-    font-size: 150px;
-    padding-top: 180px;
-}
-
-.cont {
-    height: 100vh;
-}
-
-.rep {
-    position: absolute;
-    margin-top: -500px;
-    z-index: -1;
-    margin-left: -80px;
-    border-radius: 360px;
-    filter: blur(50px);
-    opacity: 0.6;
-}
-
-.rep1 {
-    position: absolute;
-    margin-top: -650px;
-    z-index: -1;
-    margin-left: 350px;
-    border-radius: 360px;
-    filter: blur(50px);
-    opacity: 0.6;
-}
-
-.rep2 {
-    position: absolute;
-    margin-top: -100px;
-    z-index: -1;
-    margin-left: 700px;
-    border-radius: 360px;
-    filter: blur(100px);
-    opacity: 0.6;
-}
-
-.rep3 {
-    position: absolute;
-    margin-top: 200px;
-    z-index: -1;
-    margin-left: 1290px;
-    border-radius: 360px;
-    height: 300px;
-    filter: blur(70px);
-    opacity: 0.6;
-}
-
-.rep4 {
-    position: absolute;
-    margin-top: -500px;
-    z-index: -1;
-    margin-left: 1300px;
-    border-radius: 360px;
-    height: 300px;
-    filter: blur(80px);
-    opacity: 0.6;
-}
-
-.rep5 {
-    position: absolute;
-    margin-top: 0px;
-    z-index: -1;
-    margin-left: -100px;
-    border-radius: 360px;
-    height: 400px;
-    filter: blur(60px);
-    opacity: 0.6;
-}
-
-.inptbx {
-    height: 100dvh;
-    background-color: rgb(241, 241, 241);
-    align-items: center;
-}
-
-.container {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(250, 247, 247);
+    padding: 40px;
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    margin: 40px auto 0 auto;
-    padding: 50px;
-    width: fit-content;
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-}
-
-.im1 {
-    display: flex;
-    flex-basis: 40%;
-    margin: 0px;
-    width: 200px;
-    text-align: left;
-    height: 100%;
-    padding: 40px;
-}
-
-form {
-    flex-basis: 60%;
-    margin-left: 30px;
-    text-align: center;
-}
-
-.inpt {
-    width: 600px;
-    height: 50px;
-    border-radius: 15px;
-    border: none;
-    background-color: rgb(247, 247, 247);
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-}
-
-.txtbx {
-    height: 150px;
-    resize: vertical;
-    width: 600px;
-    border-radius: 15px;
-    border: none;
-    background-color: rgb(247, 247, 247);
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-}
-
-.inptbx h1 {
-    text-align: center;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(71, 71, 71);
-    font-size: 60px;
-    padding-top: 30px;
-}
-
-.inpt::placeholder {
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    padding: 20px 0 0 20px;
-    font-size: 16px;
-}
-
-.container h3 {
-    color: rgb(71, 71, 71);
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    text-align: left;
-    margin: 20px 0px 10px 10px;
-}
-
-#sub {
-    width: fit-content;
-    margin: 40px 0px 0px 0px;
-    height: 50px;
-    padding-right: 40px;
-    padding-left: 40px;
-    border: none;
-    background-color: rgb(102, 102, 102);
-    border-radius: 25px;
-    color: rgb(255, 255, 255);
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-}
-
-#sub:hover {
-    background-color: rgb(85, 79, 79);
-}
-
-.txtbx::placeholder {
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    padding: 0px 0 0 20px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.imrep1 {
-    filter: blur(100px);
-    transform: scaleX(-1);
-    margin-left: 0px;
-    position: absolute;
-    display: block;
-    margin-top: -80px;
-}
-
-.imrep2 {
-    filter: blur(80px);
-    transform: scale(-1);
-    z-index: 0;
-    height: 600px;
-    margin-left: 820px;
-    position: absolute;
-    display: block;
-    transform: rotate(90deg);
-    margin-top: -240px;
-}
-
-.autotype1 {
-    font-family: "Vina Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(226, 222, 215);
-    font-size: 140px;
-    text-align: center;
-}
-
-.comp {
-    background-color: rgb(46, 39, 39);
+    width: 400px;
     height: 300px;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: -50px;
 }
-
-.comp h1 {
-    width: 100%;
+#containe1{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(250, 247, 247);
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+    height: 300px;
+}
+#bx{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width:  400px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(236, 232, 232) ;
     text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 20px;
 }
-
-.in {
-    font-size: 70px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
+#ctemp{
+    margin-top: 8px;
 }
-
-.typed-cursor {
-    color: transparent;
-
-}
-
-#preloader {
-    background: rgb(243, 239, 239) url("1490.gif") no-repeat center;
-    height: 100vh;
-    z-index: 100;
-    width: 100%;
-    position: fixed;
-}
-
-iframe {
-    display: none;
-}
-
-.exp h1 {
-    font-family: "Vina Sans", sans-serif;
+#submit{
+    margin-top: 20px;
+    height: 25px;
+    border: 1px slategrey solid;
+    border-radius: 10px;
+    width: 100px;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: rgb(34, 32, 32);
-    letter-spacing: 0px;
-    margin-left: 30px;
-    padding: 40px;
-    font-size: 80px;
+    background-color: transparent;
+    margin-bottom: 40px;
 }
-
-.exp {
-    height: 100dvh;
-    background: rgb(196, 40, 40);
-    position: relative;
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 545;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    font-size: 18px;
-}
-
-.exp p,
-.expbox2,
-.expbox1 {
-    border-radius: 15px;
-    padding: 8px 10px 10px 20px;
-}
-
-.expbox1 {
-    width: auto;
-    border: 1px solid;
-    margin-left: 20%;
-    margin-top: 10px;
-    margin-right: 100px;
-    height: auto
-}
-.expbox1 a{
-    text-decoration: none;
-    font-family: "Inconsolata", monospace;
+.mn{
+    font-size: 25px;
+    color: rgb(43, 40, 40);
+    font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    color: rgb(34, 32, 32);
-    
+    background-color: transparent;
 }
-.expbox1 :hover{
-    color: black;
-}
-.expbox2 {
-    height: auto;
-    width: auto;
-    border: 1px solid;
-    margin-left: 20%;
-    margin-top: 40px;
-    margin-right: 100px;
+#xt{
+    color: rgb(43, 40, 40);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: transparent;
+    font-size: 20px;
+    margin-left:7px ;
 }
 
-.timeline-wrapper .middle-line {
-    position: absolute;
-    width: 600px;
-    height: 5px;
-    top: 50%;
-    transform: translateY(-50%) rotate(90deg);
-    background: rgb(34, 32, 32);
-    margin: 50px 0 0px -70px;
-    border-radius: 40px;
+#rslt{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    background-color: transparent;
+    font-size: 18px;
 }
-
-.exp h3 {
-    margin-top: -15px;
+#bx1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width:  400px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(236, 232, 232) ;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 20px;
 }
-
-.prog {
-    color: rgb(34, 32, 32);
-    margin-top: 400px;
-    margin-left: 90px;
-    position: absolute;
-    transform: rotate(-90deg);
+#ctemp1{
+    margin-top: 8px;
 }
-
-@media (width < 900px){
-    body{
-
-        display: none;
-    }  
+#submit1{
+    margin-top: 20px;
+    height: 25px;
+    border: 1px slategrey solid;
+    border-radius: 10px;
+    width: 100px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+    margin-bottom: 40px;
+}
+#rslt1{
+    display: flex;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    background-color: transparent;
+    font-size: 18px;
+}
+#ctemp {
+    accent-color: rgb(131, 130, 130) ;
+  }
+#ftemp {
+    accent-color: rgb(131, 130, 130) ;
+  }
+#ctemp1 {
+    accent-color: rgb(131, 130, 130) ;
+  }
+#ftemp1{
+    accent-color: rgb(131, 130, 130) ;
+  }  
+#submit:hover{
+    background-color: rgb(236, 232, 232);
+}
+#submit1:hover{
+    background-color: rgb(236, 232, 232);
 }
