@@ -12,7 +12,7 @@ body {
     -ms-overflow-style: none;
     background-color: rgb(243, 239, 239);
     scroll-behavior: smooth;
-    user-select: none;
+    user-zoom: none;
     overflow-x: hidden;
 }
 
@@ -366,8 +366,18 @@ form {
     z-index: 100;
     width: 100%;
     position: fixed;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;   
 }
-
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 7;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 iframe {
     display: none;
 }
