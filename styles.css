@@ -411,7 +411,20 @@ iframe {
     margin-right: 100px;
     height: auto
 }
-
+.expbox1 a{
+    text-decoration: none;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: rgb(34, 32, 32);
+    
+}
+.expbox1 :hover{
+    color: black;
+}
 .expbox2 {
     height: auto;
     width: auto;
